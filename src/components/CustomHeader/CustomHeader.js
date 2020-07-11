@@ -2,10 +2,7 @@ import React from 'react';
 import './CustomHeader.scss'
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch
+  Link
 } from "react-router-dom";
 
 const CustomHeader = () => {

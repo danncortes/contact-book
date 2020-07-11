@@ -1,2 +1,9 @@
 .home-container {
+  &__in {
+    position: absolute;
+    top: 50px;
+    overflow-y: auto;
+    width: 100vw;
+    bottom: 30px;
+  }
 }
