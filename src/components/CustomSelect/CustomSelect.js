@@ -2,11 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Form } from 'react-bootstrap';
 
-CustomSelect.propTypes = {
-  
-};
-
-function CustomSelect({nationalities, onChange}) {
+const CustomSelect = ({nationalities, onChange}) => {
   return (
     <Form>
       <Form.Group controlId="custom-select" onChange={(e) => onChange(e.target.value)}>
@@ -21,10 +17,15 @@ function CustomSelect({nationalities, onChange}) {
             </option>
             )))
           }
-        </Form.Control>
+        </Form.Control> 
       </Form.Group>
     </Form>
   );
 }
+
+CustomSelect.propTypes = {
+  nationalities: PropTypes.object,
+  onChange: PropTypes.func
+};
 
 export default CustomSelect;

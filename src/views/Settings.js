@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux'
 import CustomSelect from '../components/CustomSelect/CustomSelect'
 
-Settings.propTypes = {
-  
-};
-
-function Settings(props) {
+function Settings() {
 
   const dispatch = useDispatch()
   const nationalities = useCallback(useSelector(state => state.nationality), [])

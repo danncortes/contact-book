@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './ContactItem.scss'
 
 const ContactItem = ({ contact }) => {
@@ -14,6 +15,10 @@ const ContactItem = ({ contact }) => {
       </div>
     </div>
   )
+}
+
+ContactItem.propTypes = {
+  contact: PropTypes.object
 }
 
 export default ContactItem

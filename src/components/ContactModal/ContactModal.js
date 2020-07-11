@@ -2,11 +2,7 @@ import React from 'react';
 import { Modal } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
-ContactModal.propTypes = {
-  
-};
-
-function ContactModal({ isOpen, contact, onHide}) {
+const ContactModal = ({ isOpen, contact, onHide}) => {
   const {name: {first, last}, location: {city, street, state, postcode}, phone, cell} = contact
 
   return (
@@ -25,5 +21,11 @@ function ContactModal({ isOpen, contact, onHide}) {
     </Modal>
   );
 }
+
+ContactModal.propTypes = {
+  isOpen: PropTypes.bool,
+  contact: PropTypes.object,
+  onHide: PropTypes.func,
+};
 
 export default ContactModal;
