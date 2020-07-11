@@ -139,7 +139,8 @@ const Home = () => {
       </div>
       <div className="home-container__in" onScroll={(e) => scrollContent(e)}>
         <div className="main-container">
-          <ContactGrid contacts={filteredContacts}/>
+          {(filteredContacts.length > 0) && <ContactGrid contacts={filteredContacts}/>}
+          {(filteredContacts.length === 0 && searchString.length > 2) && <p className="p-2">There is no results</p>}
         </div>
       </div>
       <div className="fixed-bottom">

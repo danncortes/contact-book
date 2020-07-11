@@ -14,15 +14,15 @@ function App() {
     <div className="App">
       <Router>
           <CustomHeader/>
-            <div className="main-layout">
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route exact path="/settings">
-                <Settings />
-              </Route>
-            </Switch>
+          <div className="main-layout">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/settings">
+              <Settings />
+            </Route>
+          </Switch>
           </div>
         </Router>
     </div>

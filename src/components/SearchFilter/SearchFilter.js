@@ -8,6 +8,7 @@ const SearchFilter = ({onType}) => {
       type="search"
       onChange={onType}
       placeholder="Search by Name or Last Name"
+      className="search-filter"
     />
   )
 }

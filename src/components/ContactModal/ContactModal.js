@@ -6,7 +6,7 @@ const ContactModal = ({ isOpen, contact, onHide}) => {
   const {name: {first, last}, location: {city, street, state, postcode}, phone, cell} = contact
 
   return (
-    <Modal show={isOpen} onHide={onHide}>
+    <Modal className="contact-modal" show={isOpen} onHide={onHide}>
       <Modal.Header closeButton>
         <Modal.Title>{first} {last}</Modal.Title>
       </Modal.Header>

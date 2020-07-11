@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+## First off all
+Create and .env file in the root folder of the project with the API url endpoint:
+REACT_APP_BASE_URL_API=https://randomuser.me/api
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -16,6 +20,11 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn run doc`
+
+Build the documentation.
+To see the documentation go to (./docs/index.html)
 
 ### `yarn build`
 
